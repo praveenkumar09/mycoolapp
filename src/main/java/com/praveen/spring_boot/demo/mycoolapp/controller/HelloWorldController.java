@@ -17,16 +17,16 @@ public class HelloWorldController {
 
     @GetMapping("/")
     public String helloWorld() {
-        return "Hello World";
+        return "Hello World!";
     }
 
-    @GetMapping("/coachName")
-    public String coachName() {
-        return name;
+    @GetMapping("/getWorkout")
+    public String getDailyWorkout() {
+        return "Run a hard 5k";
     }
 
-    @GetMapping("/teamName")
-    public String teamName() {
-        return teamName;
+    @GetMapping("/fortune")
+    public String getDailyFortune() {
+        return "Today is your lucky day";
     }
 }
